@@ -33,23 +33,23 @@ for details.
 
 ### Main colours
 
-Yellow = #FFCD00
-Black = #000000
-White = #FFFFFF
-Red = #C00A35
+- ${\color{#FFCD00}Yellow = FFCD00}$
+- ${\color{#000000}Black = 000000}$
+- ${\color{#FFFFFF}White = FFFFFF}$
+- ${\color{#C00A35}Red = C00A35}$
 
 Red is used sparingly as additional accent.
 
 ### Secondary palette
 
-Cream = #FFE6AB
-Orange = #F3965E
-Burgundy = #AA1555
-Brown = #6E3B23
-Green = #24A793
-Blue = #5287C6
-Dark Blue = #001240
-Purple = #5B2182
+- ${\color{#FFE6AB}Cream = FFE6AB}$
+- ${\color{#F3965E}Orange = F3965E}$
+- ${\color{#AA1555}Burgundy = AA1555}$
+- ${\color{#6E3B23}Brown = 6E3B23}$
+- ${\color{#24A793}Green = 24A793}$
+- ${\color{#5287C6}Blue = 5287C6}$
+- ${\color{#001240}Dark Blue = 001240}$
+- ${\color{#5B2182}Purple = 5B2182}$
 
 These colours may also be used in lighter shades if that fits better with the
 data visualisation.
