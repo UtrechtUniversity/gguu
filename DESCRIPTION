@@ -1,0 +1,24 @@
+Package: gguu
+Title: Utrecht University Theme for ggplot2 figures
+Version: 0.0.1
+Date: 2026-04-16
+Authors@R:
+    person(given = "Sam",
+           famili = "Nooij",
+           email = "s.nooij@uu.nl",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5892-5637"))
+Depends: R (>= 3.5)
+Imports:
+  ggplot2
+Description: This package provides themes for ggplot2 based
+  on the graphical style from the Utrecht University (the Netherlands).
+  It includes fuctions to create publication-ready figures with the
+  official fonts and colours from the UU.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+  license
+URL: https://github.com/UtrechtUniversity/gguu
+BugReports: https://github.com/UtrechtUniversity/gguu/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
