@@ -15,8 +15,7 @@ Description: This package provides themes for ggplot2 based
   on the graphical style from the Utrecht University (the Netherlands).
   It includes fuctions to create publication-ready figures with the
   official fonts and colours from the UU.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-  license
+License: BSD_3_clause + file LICENSE
 URL: https://github.com/UtrechtUniversity/gguu
 BugReports: https://github.com/UtrechtUniversity/gguu/issues
 Encoding: UTF-8

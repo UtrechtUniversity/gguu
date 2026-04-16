@@ -65,11 +65,11 @@ Titles: [Merriweather](https://fonts.google.com/specimen/Merriweather)
 Other text: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 Titles, alternative: [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab)
 
-# Licence
+## Licence
 
-This project is licensed under the terms of the [...](LICENSE).
+This project is licensed under the terms of the [BSD 3-Clause License](LICENSE).
 
-# Credits
+## Credits
 
 Thanks to:
 
