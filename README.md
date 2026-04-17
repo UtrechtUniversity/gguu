@@ -1,8 +1,9 @@
 # gguu: University Utrecht ggplot theme
 
-This package provides a theme and colour palette for `ggplot` figures
-in R. With this, you can make publication-ready figures with colours
-that match the Utrecht University corporate identity.
+This package provides a theme and colour palette for
+[`ggplot`](https://ggplot2.tidyverse.org/) figures in R.
+With this, you can make publication-ready figures with colours that match
+the Utrecht University corporate identity.
 
 ## Contents
 
@@ -11,6 +12,7 @@ that match the Utrecht University corporate identity.
 - [Themes](#themes)
 - [Colours](#colours)
 - [Fonts](#fonts)
+- [Version planning](#version-planning)
 - [Licence](#licence)
 - [Credits](#credits)
 
@@ -64,6 +66,17 @@ The fonts are freely available from Google Fonts.
 Titles: [Merriweather](https://fonts.google.com/specimen/Merriweather)
 Other text: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 Titles, alternative: [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab)
+
+## Version planning
+
+- Version 0.1: first working release with simple theme and one colour palette
+- Further versions (order of updates to be determined)
+  - example figures in README
+  - theme adapted for screen, poster and article
+  - option for lighter colours
+  - proper documentation of all functions
+  - extended colour palettes?
+  - make installable through CRAN?
 
 ## Licence
 
