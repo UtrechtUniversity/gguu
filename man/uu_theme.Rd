@@ -4,7 +4,7 @@
 \alias{uu_theme}
 \title{UU theme}
 \usage{
-uu_theme()
+uu_theme(font.size = 12, line.size = 0.5)
 }
 \description{
 Utrecht University figure theme

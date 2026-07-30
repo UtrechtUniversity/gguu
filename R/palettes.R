@@ -2,8 +2,9 @@
 
 #' UU palette
 #'
-#' Utrecht University colour palette
-
+#' Utrecht University colour palette, using colours from the house style.
+#' See: https://www.uu.nl/en/organisation/corporate-identity/brand-policy/colour
+#' @export
 uu_colours <- list(
   uu_palette = c(
     "#FFE6AB",
@@ -20,6 +21,7 @@ uu_colours <- list(
   )
 )
 
+#' @export
 uu_palettes <- function(name, n, all_palettes = uu_colours, type = c("discrete", "continuous")) {
   palette <- all_palettes[[name]]
   if (missing(n)) {
@@ -33,6 +35,7 @@ uu_palettes <- function(name, n, all_palettes = uu_colours, type = c("discrete",
   structure(out, name = name, class = "palette")
 }
 
+#' @export
 scale_colour_uu_d <- function(name) {
   if (missing(name)) {
     name = "uu_palette"
@@ -42,6 +45,7 @@ scale_colour_uu_d <- function(name) {
 
 }
 
+#' @export
 scale_colour_uu_c <- function(name) {
   if (missing(name)) {
     name = "uu_palette"
@@ -51,6 +55,3 @@ scale_colour_uu_c <- function(name) {
     type = "continuous"
   ))
 }
-
-scale_color_uu_c <- scale_colour_uu_c
-scale_color_uu_d <- scale_colour_uu_d
