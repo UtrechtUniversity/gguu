@@ -32,7 +32,7 @@ uu_theme <- function(font.size = 12, line.size = 0.5) {
         family = "Open Sans",
         colour = "grey10",
         size = font.size * 1.2,
-        hjust = 0.5,
+        hjust = 0,
         vjust = 0.5,
         lineheight = 1
       ),
@@ -40,7 +40,14 @@ uu_theme <- function(font.size = 12, line.size = 0.5) {
         family = "Open Sans",
         colour = "grey10",
         size = font.size,
-        hjust = 0.5,
+        hjust = 0,
+        vjust = 0.5,
+        lineheight = 1
+      ),
+      plot.caption = element_text(
+        size = font.size,
+        face = "italic",
+        hjust = 1,
         vjust = 0.5,
         lineheight = 1
       ),
