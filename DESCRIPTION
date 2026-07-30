@@ -4,7 +4,7 @@ Version: 0.0.1
 Date: 2026-04-16
 Authors@R:
     person(given = "Sam",
-           famili = "Nooij",
+           family = "Nooij",
            email = "s.nooij@uu.nl",
            role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5892-5637"))
