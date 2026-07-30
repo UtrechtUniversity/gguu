@@ -144,3 +144,4 @@ Thanks to:
 - Jakob Wirbel, for providing a nice example with [ggembl](https://git.embl.org/grp-zeller/ggembl)
 - Yan Holtz, for inspiring me through to start making an R package in the course [Productive R workflow](https://www.productive-r-workflow.com/)
 - David Barnett for pointing me in the direction of [devtools](https://devtools.r-lib.org/) to facilitate creating a package with documentation
+- Allison Horst for providing the [penguin dataset](https://github.com/allisonhorst/palmerpenguins)
