@@ -18,11 +18,65 @@ the Utrecht University corporate identity.
 
 ## Installation
 
-(to do...)
+Install within R using `devtools`:
+
+```R
+install.packages("devtools")
+require(devtools)
+devtools::install_github("https://github.com/UtrechtUniversity/gguu.git")
+```
+
+For installing the required fonts, see [below](@fonts).
 
 ## How to use
 
-(to do...)
+Below is a simple example using data from the `ggplot2` package:
+
+```R
+library(ggplot2)
+library(gguu)
+
+mpg |>
+  ggplot(aes(x = displ, y = hwy, colour = drv)) +
+  geom_point(size = 2) +
+  labs(
+    title = "Engine size vs highway mileage",
+    subtitle = "Each point is one car model",
+    x = "Engine displacement (litres)",
+    y = "Highway miles per gallon",
+    colour = "Drive") +
+  uu_presentation() + # Use the theme for presentations (line and font sizes for screens)
+  scale_colour_uu_d() # Use the discrete colour scale
+```
+
+![Example figure using Utrecht University theme and colours](figures/example-mpg.png "Example figure using Utrecht University theme and colours")
+
+And as a more fun example, here is one with penguins! 🐧🐧
+
+```R
+library(palmerpenguins)
+
+penguins |> ggplot(na.omit(.) %>% filter(island == "Biscoe"),
+  mapping = aes(
+    x = bill_length_mm,
+    y = bill_depth_mm,
+    color = species, shape = species
+  )
+) +
+  geom_point(size = 2) +
+  theme(legend.position = "right") +
+  labs(
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)",
+    title = "Scatterplot of penguin bill sizes",
+    subtitle = "on Torgersen island",
+    caption = "Penguin species are labelled by colour and shape"
+  ) +
+  uu_publication() +
+  scale_colour_uu_d()
+```
+
+![Example figure of penguin bill sizes using public dataset](figures/example-penguins.png "Example figure using penguin dataset")
 
 ## Themes
 
