@@ -1,6 +1,6 @@
 Package: gguu
 Title: Utrecht University Theme for ggplot2 figures
-Version: 0.0.1
+Version: 0.0.2
 Date: 2026-04-16
 Authors@R:
     person(given = "Sam",

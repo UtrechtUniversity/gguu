@@ -78,6 +78,27 @@ penguins |> ggplot(na.omit(.) %>% filter(island == "Biscoe"),
 
 ![Example figure of penguin bill sizes using public dataset](figures/example-penguins.png "Example figure using penguin dataset")
 
+And here is an example using more colours, showcasing 7/8 UU palette colours:
+
+```R
+library(dplyr)
+library(forcats)
+
+mpg %>%
+  mutate(class = fct_reorder(class, hwy, .fun='median')) %>%
+  ggplot(aes(
+    x=reorder(class, hwy),
+    y=hwy,
+    fill=class)) +
+  geom_boxplot() +
+  labs(x = NULL, y = "Highway miles per gallon") +
+  uu_presentation() +
+  scale_fill_uu_d() +
+  theme(legend.position="none") # Remove the legend, because it isn't necessary
+```
+
+![Example figure: boxplot with seven different colours](figures/example-mpg-colours.png "Example box plots with seven different colours")
+
 ## Themes
 
 (to do...)

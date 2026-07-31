@@ -29,8 +29,8 @@ uu_palettes <- function(name, n, all_palettes = uu_colours, type = c("discrete",
   }
   type <- match.arg(type)
   out <- switch(type,
-                continous = grDevices::colorRampPalette(palette)(n),
-                discrete = palette[1:n]
+    continous = grDevices::colorRampPalette(palette)(n),
+    discrete = palette[1:n]
   )
   structure(out, name = name, class = "palette")
 }
@@ -38,20 +38,41 @@ uu_palettes <- function(name, n, all_palettes = uu_colours, type = c("discrete",
 #' @export
 scale_colour_uu_d <- function(name) {
   if (missing(name)) {
-    name = "uu_palette"
+    name <- "uu_palette"
   }
 
   ggplot2::scale_colour_manual(values = uu_palettes(name, type = "discrete"))
-
 }
 
 #' @export
 scale_colour_uu_c <- function(name) {
   if (missing(name)) {
-    name = "uu_palette"
+    name <- "uu_palette"
   }
-  ggplot2::scale_colour_gradientn(colours = uu_palettes(
+  ggplot2::scale_colour_gradientn(
+    colours = uu_palettes(
+      name = name,
+      type = "continuous"
+      ))
+}
+
+#' @export
+scale_fill_uu_d <- function(name) {
+  if (missing(name)) {
+    name <- "uu_palette"
+  }
+  ggplot2::scale_fill_manual(
+    values = uu_palettes(name = name, type = "discrete")
+  )
+}
+
+#' @export
+scale_fill_uu_c <- function(name) {
+  if (missing(name)) {
+    name <- "uu_palette"
+  }
+  ggplot2::scale_fill_gradientn(colours = uu_palettes(
     name = name,
     type = "continuous"
-  ))
+    ))
 }
